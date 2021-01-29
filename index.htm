@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    </meta>
     <script>
         let kekka = [];
         let hakkenn;
@@ -11,27 +10,20 @@
     </script>
     <script src="dainyuu.js"></script>
     <script src="hennkann.js"></script>
-    <style>
-        .zuipinn {
-            display: inline-block;
-            width: 4em;
-            font-weight: bold;
-        }
-        .kouho {
-            display: inline-block;
-            width: 2em;
-        }
-    </style>
+    <link rel="stylesheet" href="layout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <body>
     <h1>隋拼-漢字変換</h1>
-    <p>隋拼から漢字をサジェストします．隋拼は，Magnezone462さんが発表なさっている表記法です．</p>
-    <p>ツールの作成にあたって，<a href="https://raw.githubusercontent.com/Magnezone462/Zyevio/master/隋語廣韻全字表.csv">こちらの資料</a>を加工して使用しております．</p>
-    <textarea id="nyuuryokubunn" placeholder="ここに隋拼を入力してください。一音節ごとに分かち書きしてください。" rows="7" cols="80"></textarea>
-    <p><input type="button" onclick="hennkann()" value="変換"></p>
-    <p>ひとつの読みに対し，複数の字の候補が表示されます．候補の字をクリックすると，新しいタブで<a href="ctext.org">中国哲学書電子化計画</a>の字典が開きます．</p>
+    <textarea id="nyuuryokubunn" placeholder="ここに隋拼を入力してください。一音節ごとに分かち書きしてください（暫定）。" rows="7"></textarea>
+    <button type="button" onclick="hennkann()">変換</button>
+    <p>ひとつの読みに対し，複数の字の候補が表示されます．候補の字をクリックすると，新しいタブで<a href="https://ctext.org/">中国哲学書電子化計画</a>の字典が開きます．</p>
     <div id="syuturyokurann"></div>
+    <div>
+        <p>隋拼は，Magnezone462さんが発表なさっている表記法です．</p>
+        <p>ツールの作成にあたって，<a href="https://raw.githubusercontent.com/Magnezone462/Zyevio/master/隋語廣韻全字表.csv">こちらの資料</a>を加工して使用しております．        </p>
+    </div>
 </body>
 
 </html>
