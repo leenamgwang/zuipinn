@@ -109,6 +109,7 @@ a{
     #aux span button{
         width: 25%;
         margin: 0;
+        height: 1.3em;
     }
     .zuipinn {
         display: block;

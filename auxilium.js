@@ -38,6 +38,9 @@ function sounyuu(hozyo) {
                     case "ə":
                         tuika = "ə̀";
                         break;
+                    default:
+                        tuika = lastletter;
+                        break;
                 }
                 break;
             case "circonflexe":
@@ -62,6 +65,9 @@ function sounyuu(hozyo) {
                         break;
                     case "ə":
                         tuika = "ə̂";
+                        break;
+                    default:
+                        tuika = lastletter;
                         break;
                 }
                 break;
