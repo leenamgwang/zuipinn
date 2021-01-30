@@ -10,11 +10,21 @@ body {
     margin: 0;
 }
 button{
-    color: white;
     border: none;
-    background:#2d6483;
     margin: 0;
+}
+#hennkann{
+    background:#2d6483;
+    color: white;
     margin-left: 10px;
+}
+#aux span button{
+    background: #8abad4;
+    color: #333;
+    border-left: #e6e6e6 1px solid;
+}
+#aux span button:first-child{
+    border-left: none;
 }
 #syuturyokurann{
     margin: 10px;
@@ -41,7 +51,17 @@ a{
     }
     button{
         display: inline-block;
+    }
+    #hennkann{
         width: 20%;
+        margin-left: 2.5em;
+    }
+    #aux span button{
+        width: 8em;
+    }
+    #aux span:first-child::before{
+        content: '補助記号：';
+        display: inline-block;
     }
     .zuipinn {
         display: inline-block;
@@ -76,10 +96,19 @@ a{
         border: 0;
     }
     button{
-        width: calc(100% - 20px);
         font-size: 1.5em;
         margin-right: 10px;
         padding: 0;
+    }
+    #hennkann{
+        width: 100%;
+        margin-left: 0;
+        display: block;
+        margin-top: 20px;
+    }
+    #aux span button{
+        width: 25%;
+        margin: 0;
     }
     .zuipinn {
         display: block;
